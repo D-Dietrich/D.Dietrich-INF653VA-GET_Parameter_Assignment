@@ -1,0 +1,21 @@
+body { background-color: #43464B; 
+    font-family: Arial, sans-serif;}
+#sheet { margin: 0 auto;
+        width: 80%; min-width: 500px;
+        background-color: #FFFFFF; 
+        border: 2px solid #000000;}
+h1 { background-color: #8ee9dd;
+ border: 2px solid #000000;
+  margin: auto;
+ font-size: 6em;
+  text-align: center;
+ padding: .5em;
+  }
+main { margin: auto; }
+form { width: 350px; 
+    padding: 10px; 
+    margin: auto;}
+label { display: block;
+     width: 125px; 
+     margin-top: 10px; }
+input { display: block; margin-top: 10px; }
