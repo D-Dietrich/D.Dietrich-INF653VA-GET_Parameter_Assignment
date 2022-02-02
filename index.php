@@ -13,10 +13,10 @@
     <div id="sheet">
     <h1>Please Answer the Form:</h1>
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>">
-        <label for="f_name">First Name: </label>
-        <input type ="text" id="f_name" name="f_name" autocomplete="off"> <br><br>
-        <label for="l_name">Last Name: </label>
-        <input type ="text" id="l_name" name="l_name" autocomplete="off"> <br><br>
+        <label for="firstname">First Name: </label>
+        <input type ="text" id="firstname" name="firstname" autocomplete="off"> <br><br>
+        <label for="lastname">Last Name: </label>
+        <input type ="text" id="lastname" name="lastname" autocomplete="off"> <br><br>
         <label for="age">Age: </label>
         <input type ="text" id="age" name="age" autocomplete="off"> <br><br>
         <div>
@@ -28,14 +28,14 @@
 <br> <h2>Form Results:</h2>
 <?php
 
-if (empty($_GET['f_name']) || empty($_GET['f_name']) || (empty($_GET['age']))) {
+if (empty($_GET['firstname']) || empty($_GET['firstname']) || (empty($_GET['age']))) {
 //If one or more items in the form have not been filled out, error message displays.
     echo "\n Please fill out the entire form to display relevant sentences. ";
 } 
 else {
     //If entire form has been filled out, values are assigned.
-    $fname = htmlspecialchars($_GET['f_name']); 
-    $lname = htmlspecialchars($_GET['l_name']);
+    $fname = htmlspecialchars($_GET['firstname']); 
+    $lname = htmlspecialchars($_GET['lastname']);
     $age = htmlspecialchars($_GET['age']);
     
     //Creation of sentences
