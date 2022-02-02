@@ -28,7 +28,7 @@
 <br> <h2>Form Results:</h2>
 <?php
 
-if (empty($_GET['firstname']) || empty($_GET['firstname']) || (empty($_GET['age']))) {
+if (empty($_GET['firstname']) || empty($_GET['lastname']) || (empty($_GET['age']))) {
 //If one or more items in the form have not been filled out, error message displays.
     echo "\n Please fill out the entire form to display relevant sentences. ";
 } 
